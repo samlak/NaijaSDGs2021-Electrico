@@ -1,98 +1,151 @@
-<%- include('../partials/pages/header', {title: "Dashboard"}); %>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard</h1>
-          </div><!-- /.col -->
-
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
-            </ol>
-          </div><!-- /.col -->
-          
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>1</h3>
-
-                <p>Articles</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-edit"></i>
-              </div>
-              
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>2</h3>
-
-                <p>Authors</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-users"></i>
-              </div>
-              
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>4</h3>
-
-                <p>Users Comment</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-comment"></i>
-              </div>
-              
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>5</h3>
-
-                <p>Page Views</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-eye"></i>
-              </div>
-              
-            </div>
-          </div>
-          <!-- ./col -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Electrico - Lighting every home in Nigeria</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" sizes="128x128" href="./../../../../img/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<%= publicPath %>css/animate.css">
+    <link rel="stylesheet" href="<%= publicPath %>css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<%= publicPath %>css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<%= publicPath %>css/magnific-popup.css">
+    <link rel="stylesheet" href="<%= publicPath %>css/flaticon.css">
+    <link rel="stylesheet" href="<%= publicPath %>css/style.css">
+    <link rel="stylesheet" href="<%= publicPath %>css/custom.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="">Electrico</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/sponsor" class="nav-link">Become a Sponsor</a></li>
+            <li class="nav-item"><a href="/application" class="nav-link">Own a Solar</a></li>
+          </ul>
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
+    </nav>
+    <div class="hero-wrap" style="background-image: url('../../../../img/man.jpeg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="overlay-2"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center">
+          <div class="col-md-7 ftco-animate d-flex align-items-end">
+            <div class="text w-100 ">
+              <h1 class="mb-4 color-green">Empowering over 80 Million Nigerians with electricity</h1>
+              <p class="mb-4 font-weight-bold color-white">We believe everybody should have access to an affordable and constant power supply. We are on the mission to make electricity 
+                affordable and accessible. Leveraging on our installment plan, our platform make it easier for you to install solar inverter in your home.
+                You can also sponsor any solar project on the platform and earn 20% profit on your sponsorship.
+              </p>
+              <p><a href="/sponsor" class="btn btn-primary py-3 px-4">SPONSOR A PROJECT</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mouse">
+        <a href="#" class="mouse-icon">
+          <div class="mouse-wheel"><span class="fa fa-chevron-down"></span></div>
+        </a>
+      </div>
     </div>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-  
-<%- include('../partials/pages/footer'); %>
+    <section class="ftco-section ftco-fullwidth goto-here">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+            <span class="subheading">Why Choose Us?</span>
+            <h2 class="mb-2">What differentiate us from others?</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-0">
+        <div class="row d-sm-flex text-wrapper align-items-stretch">
+          <div class="one-half mb-md-0 mb-4 img d-flex align-self-stretch" style="background-image: url('../../../../img/man-2.jpg');"></div>
+          <div class="one-half half-text d-flex justify-content-end align-items-center">
+            <div class="text-inner pt-md-5 pl-md-5">
+              <div class="row d-flex">
+                <div class="col-md-12 d-flex align-self-stretch ftco-animate">
+                  <div class="media block-6 services-wrap d-flex">
+                    <div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-loan"></span></div>
+                    <div class="media-body pl-4">
+                      <h3>Flexible payment method</h3>
+                      <p>The cost of a solar inverter is expensive that is why we want to make it affordable for you. Instead of paying everything upfront we 
+                        allow to spread your payment over 12 months.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex align-self-stretch ftco-animate">
+                  <div class="media block-6 services-wrap d-flex">
+                    <div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-fast"></span></div>
+                    <div class="media-body pl-4">
+                      <h3>Verified Technician</h3>
+                      <p>We assign a verified technician to you. This technician will be incharge of the installation and also provide post-installation support</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex align-self-stretch ftco-animate">
+                  <div class="media block-6 services-wrap d-flex">
+                    <div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-routine"></span></div>
+                    <div class="media-body pl-4">
+                      <h3>Impact-based sponsorship</h3>
+                      <p>If you are a change maker and want to put your money into good use we are here for you. We will help you empower 80 millions Nigerian with electricity</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 d-flex align-self-stretch ftco-animate">
+                  <div class="media block-6 services-wrap d-flex">
+                    <div class="icon d-flex justify-content-center align-items-center"><span class="flaticon-team"></span></div>
+                    <div class="media-body pl-4">
+                      <h3>Trusted marketplace</h3>
+                      <p>We get you covered for your solar installation component and parts. We will connect you with our trusted seller. You will get waranty on any goods purchased through our platform</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url(../../../../img/panel.webp);"></div>
+          <div class="col-md-6 wrap-about pl-md-5 ftco-animate py-md-5">
+            <div class="heading-section">
+              <h2 class="mb-4">Why you should choose Solar?</h2>
+              <p>
+                There are a number of good reasons for choosing to go solar but sometimes you don’t realize this and stick to the common means of energy. This happens because of 
+                the lack of information as many others think that solar energy is expensive or believes a number of other myths about solar power. <strong>Electrico</strong> is here to make <strong>solar energy</strong> accessible 
+                and affordable for you. These are some of the advantages of having a solar power:
+              </p>
+              <p><strong>Reduced Energy Costs: </strong>Electricity bills are a nightmare for business owners and the worst part is that they keep rising. Going solar will substantially reduce your energy costs helping you improve your budget.</p>
+              <p><strong>Fewer/No Power Outages: </strong>Unexpected power outages are quite characteristic of traditional energy sources and might get you into serious problems</p>
+              <p><strong>Low-Maintenance: </strong>Solar systems require almost no maintenance. The average lifespan of solar panels is 25-40 years.</p>
+              <p><strong>Decrease in Carbon Footprint: </strong>Deciding to go solar will not only be a good investment for you but also for the environment. Giving up on the traditional energy sources you will have your part in the decrease of the overall carbon footprint of the world.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="<%= publicPath %>js/jquery.min.js"></script>
+    <script src="<%= publicPath %>js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="<%= publicPath %>js/popper.18.min.js"></script>
+    <script src="<%= publicPath %>js/bootstrap.3.min.js"></script>
+    <script src="<%= publicPath %>js/jquery.easing.1.3.js"></script>
+    <script src="<%= publicPath %>js/jquery.waypoints.min.js"></script>
+    <script src="<%= publicPath %>js/jquery.stellar.min.js"></script>
+    <script src="<%= publicPath %>js/owl.carousel.min.js"></script>
+    <script src="<%= publicPath %>js/jquery.magnific-popup.min.js"></script>
+    <script src="<%= publicPath %>js/jquery.animateNumber.min.js"></script>
+    <script src="<%= publicPath %>js/scrollax.min.js"></script>
+    <script src="<%= publicPath %>js/main.js"></script>
+  </body>
+</html>
