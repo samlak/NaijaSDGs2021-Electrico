@@ -9,29 +9,36 @@ const port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 
-app.locals.publicPath = "/../../../";
+app.use(
+    express.static(path.join(__dirname, '/../public')),
+);
 
-// PUBLIC ROUTE
+app.locals.publicPath = "/../../../";
 
 app.get('/', async (req, res) => {
     await PageController.homepage(req, res);
 });
 
-app.get('/login', (req, res) => {
-    await PageController.login(req, res);
+app.get('/dashboard', async (req, res) => {
+    await PageController.dashboard(req, res);
 });
 
-app.get('/register', (req, res) => {
+app.get('/register', async (req, res) => {
     await PageController.register(req, res);
 });
 
-app.get('/login', (req, res) => {
+app.get('/login', async (req, res) => {
     await PageController.login(req, res);
 });
 
-app.get('/404', (req, res) => {
-    res.render('custom/404');
-});
-
 app.use(
-  
+    function(req, res, next){
+        res.status(404);
+        res.render('custom/404', {url: req.url});
+        return;
+    },
+);
+
+app.listen(port, () => {
+    console.log(`Listening to port ${port}`)
+})
