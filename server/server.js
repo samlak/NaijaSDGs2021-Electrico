@@ -23,6 +23,10 @@ app.get('/dashboard', async (req, res) => {
     await PageController.dashboard(req, res);
 });
 
+app.get('/apply', async (req, res) => {
+    await PageController.apply(req, res);
+});
+
 app.get('/register', async (req, res) => {
     await PageController.register(req, res);
 });

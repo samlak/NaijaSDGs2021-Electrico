@@ -12,6 +12,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <title><%= title %> | Electrico</title>
 
   <!-- Font Awesome Icons -->
+  <link rel="icon" sizes="128x128" href="<%= publicPath %>img/logo.png">
   <link rel="stylesheet" href="<%= publicPath %>plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<%= publicPath %>css/adminlte.min.css">
@@ -34,16 +35,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- SEARCH FORM -->
-      <!-- <form class="form-inline ml-3 mr-2">
-        <div class="input-group input-group-sm">
-          <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-navbar" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </div>
-      </form> -->
+      
       <li>
         <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
         <i class="fa fa-fw fa-power-off"></i> Log Out
@@ -58,7 +50,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/dashboard" class="brand-link">
+    <a href="/" class="brand-link">
       <img src="<%= publicPath %>img/logo.png" alt="Electrico Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">Electrico</span>
@@ -73,7 +65,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
 
         <div class="info">
-          <a href="#" class="d-block">Salami</a>
+          <a href="#" class="d-block">Salami Haruna</a>
         </div>
       </div>
 
@@ -84,7 +76,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                with font-awesome or any other icon font library -->
                
           <li class="nav-item">
-            <a href="/admin/dashboard" class="nav-link">
+            <a href="/dashboard" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -93,44 +85,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
                
           <li class="nav-item">
-            <a href="/admin/category" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+            <a href="/apply" class="nav-link">
+              <i class="nav-icon fas fa-hand-pointer"></i>
               <p>
-                Category
+                Own a Solar
               </p>
             </a>
           </li>
-               
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-                Article
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/admin/article/add" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Article</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/admin/article" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Articles</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-               
+
           <li class="nav-item">
-            <a href="/admin/author" class="nav-link">
+            <a href="/sponsor" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
-                Authors
+                Sponsor a Project
               </p>
             </a>
           </li>

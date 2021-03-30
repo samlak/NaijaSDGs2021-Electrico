@@ -14,9 +14,14 @@ const homepage = async (req, res) => {
     res.render('pages/homepage');
 }
 
+const apply = async (req, res) => {
+    res.render('pages/apply');
+}
+
 module.exports = {
     login,
     register,
     dashboard,
-    homepage
+    homepage,
+    apply
 };
