@@ -22,11 +22,16 @@ const sponsor = async (req, res) => {
     res.render('pages/sponsor');
 }
 
+const sponsorDetail = async (req, res) => {
+    res.render('pages/sponsor-detail');
+}
+
 module.exports = {
     login,
     register,
     dashboard,
     homepage,
     apply,
-    sponsor
+    sponsor,
+    sponsorDetail
 };

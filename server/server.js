@@ -31,6 +31,10 @@ app.get('/sponsor', async (req, res) => {
     await PageController.sponsor(req, res);
 });
 
+app.get('/sponsor/:name', async (req, res) => {
+    await PageController.sponsorDetail(req, res);
+});
+
 app.get('/register', async (req, res) => {
     await PageController.register(req, res);
 });
