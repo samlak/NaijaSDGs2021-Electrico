@@ -27,6 +27,10 @@ app.get('/apply', async (req, res) => {
     await PageController.apply(req, res);
 });
 
+app.get('/sponsor', async (req, res) => {
+    await PageController.sponsor(req, res);
+});
+
 app.get('/register', async (req, res) => {
     await PageController.register(req, res);
 });

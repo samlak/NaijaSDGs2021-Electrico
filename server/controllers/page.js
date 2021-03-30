@@ -18,10 +18,15 @@ const apply = async (req, res) => {
     res.render('pages/apply');
 }
 
+const sponsor = async (req, res) => {
+    res.render('pages/sponsor');
+}
+
 module.exports = {
     login,
     register,
     dashboard,
     homepage,
-    apply
+    apply,
+    sponsor
 };
